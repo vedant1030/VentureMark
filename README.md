@@ -1,3 +1,3 @@
-# IgnitionHackathon2023
+# IgnitionHacks2023
 Group Project
 fish

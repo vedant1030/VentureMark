@@ -7,41 +7,42 @@ body, h1, h2, p, label {
 /* Global styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: #eee;
+    background-color: #1a1a1a;
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
+    margin: 0;
 }
 
 .title {
-    margin-top: 20px;
     font-size: 36px;
     font-weight: bold;
     color: #3498db;
 }
 
 .container {
-    max-width: 590px;
-    margin-top: 20px;
+    width: 90%;
+    max-width: 600px;
     padding: 20px;
     text-align: center;
-    background-color: #222;
+    background-color: #333;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin: 20px;
 }
 
 /* Copyright styles */
 .footer {
-    margin-top: 20px;
     color: #777;
     font-size: 14px;
+    margin-top: 20px;
 }
 
 /* Header styles */
 .header {
-    /*background-color: #1e272e;*/
     color: #fff;
     padding: 12px 0;
     text-align: center;
@@ -49,11 +50,12 @@ body {
 }
 
 .logo {
-    margin-top: 40px;
     font-size: 48px;
     font-weight: bold;
     color: #3498db;
     animation: subtleJump 1.5s cubic-bezier(0.45, -0.8, 0.5, 1.6) infinite;
+    outline: none;
+    text-decoration: none; /* Remove underline */
 }
 
 /* Form styles */
@@ -91,8 +93,8 @@ input[type="text"] {
     border-radius: 6px;
     margin-bottom: 12px;
     font-size: 16px;
-    background-color: #333;
-    color: #eee;
+    background-color: #444;
+    color: #fff;
 }
 
 .btn-submit {
@@ -113,7 +115,7 @@ input[type="text"] {
 
 /* Result styles */
 .result-section {
-    background-color: #333;
+    background-color: #444;
     padding: 20px;
     border-radius: 0 0 12px 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);

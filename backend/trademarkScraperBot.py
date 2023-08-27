@@ -1,13 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
 from element_manager import *
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
-class TrademarkScraper:
-
-    # Initializes the TrademarkScraper class
+class trademarkScraperBot:
+    
+    # Initializes the TrademarkScraper class    
     def __init__(self):
         self.driver = self.init_driver()
         self.open_trademark_search_page()
@@ -16,7 +15,7 @@ class TrademarkScraper:
     def init_driver(self):
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--log-path=chromedriver.log")
-        return webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+        return webdriver.Chrome()
 
     # Opens the trademark search page and selects search options
     def open_trademark_search_page(self):
@@ -45,7 +44,7 @@ class TrademarkScraper:
 
 # Initializes the main function
 def main():
-    bot = TrademarkScraper()  # Create an instance of TrademarkScraper
+    bot = trademarkScraperBot()  # Create an instance of TrademarkScraper
     try:
         while True:
             user_input = input("Enter a trademark name (or 'exit' to end): ")

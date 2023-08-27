@@ -10,13 +10,21 @@ body {
     background-color: #121212;
     color: #eee;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
 }
 
+.title {
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #3498db;
+}
+
 .container {
-    max-width: 450px;
+    max-width: 590px;
+    margin-top: 20px;
     padding: 20px;
     text-align: center;
     background-color: #222;
@@ -24,9 +32,16 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Copyright styles */
+.footer {
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
 /* Header styles */
 .header {
-    background-color: #1e272e;
+    /*background-color: #1e272e;*/
     color: #fff;
     padding: 12px 0;
     text-align: center;
@@ -34,6 +49,7 @@ body {
 }
 
 .logo {
+    margin-top: 40px;
     font-size: 48px;
     font-weight: bold;
     color: #3498db;
@@ -108,15 +124,6 @@ input[type="text"] {
     margin-top: 10px;
     font-weight: bold;
     color: #27ae60;
-}
-
-/* Footer styles */
-.footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 12px 0;
-    border-radius: 0 0 12px 12px;
 }
 
 /* Animations */

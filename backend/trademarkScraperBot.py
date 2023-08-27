@@ -4,7 +4,7 @@ from element_manager import *
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
-class trademarkScraperBot:
+class TrademarkScraper:
     
     # Initializes the TrademarkScraper class    
     def __init__(self):
@@ -44,7 +44,7 @@ class trademarkScraperBot:
 
 # Initializes the main function
 def main():
-    bot = trademarkScraperBot()  # Create an instance of TrademarkScraper
+    bot = TrademarkScraper()  # Create an instance of TrademarkScraper
     try:
         while True:
             user_input = input("Enter a trademark name (or 'exit' to end): ")

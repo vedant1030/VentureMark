@@ -1,12 +1,12 @@
 # VentureMark: Trademark Availability Tool
 
-VentureMark is a Python program and a web application designed to help startup businesses check the availability of trademarks for their company names. The Python program utilizes web scraping techniques through Selenium to interact with the Canadian Intellectual Property Office (CIPO) trademark search page. The web application provides a user-friendly interface for checking trademark availability.
+VentureMark is a Python program and a web application designed to help startup businesses check the availability of trademarks for their company names. The Python program utilizes web scraping techniques through Selenium to interact with the Canadian Intellectual Property Office (CIPO) trademark database page. The web application provides a user-friendly interface for checking trademark availability.
 
 ## Python Program (TrademarkScraperBot)
 
 ### Features
 
-- Initializes a Chrome webdriver and navigates to the CIPO trademark search page.
+- Initializes a Chrome webdriver and navigates to the CIPO trademark database page.
 - Selects search options for trademark lookup.
 - Checks if a trademark name is available.
 - Provides suggestions for similar trademark names if the original name is unavailable.

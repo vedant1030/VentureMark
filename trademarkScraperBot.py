@@ -6,7 +6,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
 class TrademarkScraper:
-    
+
+    # Initializes the TrademarkScraper class
     def __init__(self):
         self.driver = self.init_driver()
         self.open_trademark_search_page()

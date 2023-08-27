@@ -43,6 +43,7 @@ class TrademarkScraper:
     def cleanup(self):
         self.driver.quit()
 
+# Initializes the main function
 def main():
     bot = TrademarkScraper()
     try:

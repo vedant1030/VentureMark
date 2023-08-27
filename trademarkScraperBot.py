@@ -11,11 +11,13 @@ class TrademarkScraper:
         self.driver = self.init_driver()
         self.open_trademark_search_page()
 
+    # Initializes the Chrome webdriver
     def init_driver(self):
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--log-path=chromedriver.log")
         return webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
 
+    # Opens the trademark search page and selects search options
     def open_trademark_search_page(self):
         self.driver.get('https://ised-isde.canada.ca/cipo/trademark-search/srch?lang=eng')
         select_element = self.driver.find_element(By.XPATH, get_xpath(self.driver, 'SvqW4HEINzAidQV'))
@@ -23,6 +25,7 @@ class TrademarkScraper:
         selecttag.select_by_value('tmlookup_ext')
         self.driver.find_element(By.XPATH, get_xpath(self.driver, '34l07HUMse100gE')).click()
 
+    # Checks if a trademark is available
     def check_trademark_availability(self, trademark):
         input_element = self.driver.find_element(By.XPATH, get_xpath(self.driver, '5okNS1Bdar56Q2g'))
         input_element.clear()
@@ -35,6 +38,7 @@ class TrademarkScraper:
         else:
             return False
 
+    # Cleans up and closes the webdriver
     def cleanup(self):
         self.driver.quit()
 

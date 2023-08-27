@@ -45,20 +45,20 @@ class TrademarkScraper:
 
 # Initializes the main function
 def main():
-    bot = TrademarkScraper()
+    bot = TrademarkScraper()  # Create an instance of TrademarkScraper
     try:
         while True:
             user_input = input("Enter a trademark name (or 'exit' to end): ")
             if user_input.lower() == "exit":
                 break
             
-            availability = bot.check_trademark_availability(user_input)
+            availability = bot.check_trademark_availability(user_input)  # Check trademark availability
             if availability:
                 print("Trademark is available.")
             else:
                 print("Trademark is not available.")
     finally:
-        bot.cleanup()
+        bot.cleanup()  # Clean up resources when done
 
 if __name__ == "__main__":
-    main()
+    main()  # Execute the main function
